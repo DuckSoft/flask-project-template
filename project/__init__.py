@@ -6,4 +6,6 @@ app.config.from_object('setting')
 
 db = SQLAlchemy(app)
 
-from .controller import *
+from . import controller
+
+controller.initialize()
